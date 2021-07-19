@@ -18,7 +18,7 @@ var addressSchema = new Schema({
     state:{type:String , required:true},
     pin:Number,
     user:Schema.Types.ObjectId
-})
+},{timestamps:true})
 
 
 var Address = mongoose.model("Address" , addressSchema)
