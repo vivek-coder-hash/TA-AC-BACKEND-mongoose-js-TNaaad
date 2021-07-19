@@ -16,5 +16,10 @@ var userSchema  = new Schema({
 })
 
 
+/* create User model for the user Schema created in previous exercise and export it using module.exports*/
+
+var User =mongoose.model("User" , userSchema) // model created on top of user (user.js) schema
+
+module.exports =User
 
 
