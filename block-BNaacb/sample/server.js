@@ -3,7 +3,7 @@ var logger  = require("morgan")
 var mongoose = require("mongoose")
 
 //connect to database
-mongoose.connect("mongodb://localhost/sample" , { useNewUrlParser: true } , (err)=> {
+mongoose.connect("mongodb://localhost/sample" , { useNewUrlParser: true , useUnifiedTopology:true } , (err)=> {
     console.log(err ? err : "connected db")
 })
 
