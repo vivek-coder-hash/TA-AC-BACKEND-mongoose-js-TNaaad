@@ -4,16 +4,14 @@ var Schema = mongoose.Schema  // schema is structure of document which we want t
 
 
 
-/* Q.create a user schema with following fields and type
-1.name -> string
-2.email -> string
-3.age -> number */
 
-/* update user schema to make email lowercase and default age to be 0. */
 var userSchema  = new Schema({
     name: String ,
     email : {type:String , lowercase:true} ,
-    age :{type:Number, default: 0}
+    age :{type:Number, default: 0} ,
+    favourties: [String] , //favorites field which should store array of strings
+    marks: [Number] //marks field which is array of numbers
+
 })
 
 
